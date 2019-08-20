@@ -3,10 +3,12 @@ var app = express();
 
 var PORT = process.env.PORT || 3030;
 
-app.get('/',function(req,res){
-    res.send('hello jimmy');
-})
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-app.listen(PORT, function(){
-    console.log('listening on ' +PORT);
-})
+require("./routes/api")(app);
+require("./routes/pages")(app);
+
+app.listen(PORT, function () {
+    console.log("App listening on PORT: " + PORT);
+});
