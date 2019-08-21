@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-#FriendFinder
-=======
+
 # friendFinder
->>>>>>> 5c5a7658618d6cc3656f79053156ab8ad05283bf
 
 ##Getting Started
 A link for the deployed site
@@ -19,15 +16,4 @@ Using JQuery with inline checkboxes proved to be a more difficult task than i ha
                 });
             }
 `
-This loop iterates through my questions with id = question1, question2, etc.,
-Then pushes any checked boxes it encounters in its children.
-
-<<<<<<< HEAD
-I then simply joined the answers array with ','
-=======
-I then simply joined the answers array with ','
-
-
-
-                
->>>>>>> 5c5a7658618d6cc3656f79053156ab8ad05283bf
+This loop iterates through my questions with i
