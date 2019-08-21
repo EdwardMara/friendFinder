@@ -1,5 +1,5 @@
 
-# friendFinder
+#friendFinder
 
 ##Getting Started
 A link for the deployed site
@@ -10,10 +10,11 @@ At the home page, click on the button to continue to the survey. Read each state
 
 ##Notes
 Using JQuery with inline checkboxes proved to be a more difficult task than i had originally thought.
-`              for (let i = 1; i <= 10; i++) {
-                $('#question${i} input:checked').each(function(){
-                    answers.push($(this).val());
-                });
-            }
+`             
+for (let i = 1; i <= 10; i++) {
+     $('#question${i} input:checked').each(function(){
+        answers.push($(this).val());
+    });
+}
 `
-This loop iterates through my questions with i
+This loop iterates through my questions that have ids of "question1", "question2", etc., and takes the values of all the checked boxes in their children. These values are parsed and pushed into an array of answers which i then join with ","
