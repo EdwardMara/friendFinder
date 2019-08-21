@@ -9,10 +9,17 @@ At the home page, click on the button to continue to the survey. Read each state
 
 ##Notes
 Using JQuery with inline checkboxes proved to be a more difficult task than i had originally thought.
-`   for (let i = 1; i <= 10; i++) {
-                $(`#question${i} input:checked`).each(function(){
+`              for (let i = 1; i <= 10; i++) {
+                $('#question${i} input:checked').each(function(){
                     answers.push($(this).val());
                 });
+            }
 `
+This loop iterates through my questions with id = question1, question2, etc.,
+Then pushes any checked boxes it encounters in its children.
+
+I then simply joined the answers array with ','
+
+
 
                 
